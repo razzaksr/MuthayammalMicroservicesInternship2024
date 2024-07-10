@@ -1,12 +1,12 @@
-DELETE http://localhost:8085/remove/1
+DELETE http://localhost:8085/collection/remove/1
 
 ###
 
-GET http://localhost:8085/industries
+GET http://localhost:8085/collection/industries
 
 ###
 
-POST http://localhost:8085/client
+POST http://localhost:8085/collection/client
 Content-Type: application/json
 
 REtail

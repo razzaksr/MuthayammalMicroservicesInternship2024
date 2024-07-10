@@ -8,6 +8,7 @@ import java.util.List;
 
 // back end router: accept the request and process
 @RestController
+@RequestMapping("/collection")
 public class BasicRest {
 
     private List<String> industryVerticals=new ArrayList<>();

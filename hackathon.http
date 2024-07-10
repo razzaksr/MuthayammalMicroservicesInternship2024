@@ -1,0 +1,19 @@
+GET http://localhost:8085/hackathon/view
+
+###
+
+POST http://localhost:8085/hackathon/enroll
+Content-Type: application/json
+
+Eeniya
+
+###
+
+PUT http://localhost:8085/hackathon/alter/2
+Content-Type: application/json
+
+Baasha
+
+###
+
+DELETE http://localhost:8085/hackathon/delete/Gowshika

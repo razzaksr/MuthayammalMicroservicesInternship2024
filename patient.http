@@ -1,0 +1,35 @@
+GET http://localhost:8085/patient/
+
+###
+
+POST http://localhost:8085/patient/
+Content-Type: application/json
+
+{
+    "patientId": 9283,
+    "patientName": "Baasha",
+    "age": 20,
+    "bloodGroup": "O+",
+    "address": "SAlem",
+    "contact": 9876565523,
+    "issue": "Fever"
+}
+
+###
+
+DELETE http://localhost:8085/patient/122
+
+###
+
+PUT http://localhost:8085/patient/
+Content-Type: application/json
+
+{
+    "patientId": 918,
+    "patientName": "Baasha",
+    "age": 20,
+    "bloodGroup": "O+",
+    "address": "SAlem",
+    "contact": 9876565523,
+    "issue": "Fever"
+}
