@@ -4,3 +4,17 @@ DELETE http://localhost:8085/remove/1
 
 GET http://localhost:8085/industries
 
+###
+
+POST http://localhost:8085/client
+Content-Type: application/json
+
+REtail
+
+
+###
+
+PUT http://localhost:8085/change/2
+Content-Type: application/json
+
+Automation
