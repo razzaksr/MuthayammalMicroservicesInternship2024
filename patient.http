@@ -6,18 +6,17 @@ POST http://localhost:8085/patient/
 Content-Type: application/json
 
 {
-    "patientId": 9283,
     "patientName": "Baasha",
     "age": 20,
     "bloodGroup": "O+",
-    "address": "SAlem",
-    "contact": 9876565523,
+    "address": "Salem",
+    "contact":87654567894,
     "issue": "Fever"
 }
 
 ###
 
-DELETE http://localhost:8085/patient/122
+DELETE http://localhost:8085/patient/2
 
 ###
 
@@ -25,11 +24,11 @@ PUT http://localhost:8085/patient/
 Content-Type: application/json
 
 {
-    "patientId": 918,
+    "patientId": 10,
     "patientName": "Baasha",
     "age": 20,
     "bloodGroup": "O+",
     "address": "SAlem",
     "contact": 9876565523,
-    "issue": "Fever"
+    "issue": "Cold"
 }
