@@ -10,3 +10,7 @@ Content-Type: application/json
     "department":"Psychologist",
     "experience":30
 }
+
+###
+
+GET http://localhost:8086/doctor/5

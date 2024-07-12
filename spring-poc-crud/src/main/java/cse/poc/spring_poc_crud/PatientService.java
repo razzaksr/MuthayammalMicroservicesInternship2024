@@ -10,6 +10,10 @@ public class PatientService {
     @Autowired
     PatientRemote remote;
 
+    public List<Patient> implementFindDoc(int docId){
+        return remote.findAllByDoctorId(docId);
+    }
+
     public Patient implementFindById(int patientID){
         return remote.findById(patientID).orElse(new Patient());
     }

@@ -10,8 +10,15 @@ public class DoctorService {
     @Autowired
     DoctorRemote remote;
 
+    @Autowired
+    FiegnCommunicator fiegnCommunicator;
+
     public Doctor implementFindByID(int id){
-        return remote.findById(id).orElse(new Doctor());
+        Doctor obj = remote.findById(id).orElse(new Doctor());
+        if(obj!=null){
+            obj.setMyPatients(fiegnCommunicator.callPatients(obj.getDoctorId()));
+        }
+        return obj;
     }
 
     public List<Doctor> implementFindAll(){

@@ -15,6 +15,11 @@ public class PatientMapping {
     @Autowired
     private PatientService service;
 
+    @GetMapping("/byDoctor/{docId}")
+    public List<Patient> callByDoc(@PathVariable("docId") int docId){
+        return service.implementFindDoc(docId);
+    }
+
     @GetMapping("/{id}")
     public Patient fetchOne(@PathVariable("id") int id){
         return service.implementFindById(id);
