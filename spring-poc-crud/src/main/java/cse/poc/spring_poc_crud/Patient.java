@@ -20,7 +20,7 @@ public class Patient {
     // primary key
     @Id
     // auto increment
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int patientId;
     private String patientName;
     private int age;
@@ -28,4 +28,5 @@ public class Patient {
     private String address;
     private long contact;
     private String issue;
+    private int doctorId;
 }

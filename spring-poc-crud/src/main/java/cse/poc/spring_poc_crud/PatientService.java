@@ -10,6 +10,10 @@ public class PatientService {
     @Autowired
     PatientRemote remote;
 
+    public Patient implementFindById(int patientID){
+        return remote.findById(patientID).orElse(new Patient());
+    }
+
     public void implementDelete(int id){
         remote.deleteById(id);
     }

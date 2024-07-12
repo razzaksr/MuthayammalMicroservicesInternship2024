@@ -15,6 +15,11 @@ public class PatientMapping {
     @Autowired
     private PatientService service;
 
+    @GetMapping("/{id}")
+    public Patient fetchOne(@PathVariable("id") int id){
+        return service.implementFindById(id);
+    }
+
     @PutMapping("/")
     public Patient progress(@RequestBody Patient patient){
         return service.implementSave(patient);

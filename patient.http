@@ -6,12 +6,13 @@ POST http://localhost:8085/patient/
 Content-Type: application/json
 
 {
-    "patientName": "Baasha",
-    "age": 20,
-    "bloodGroup": "O+",
-    "address": "Salem",
-    "contact":87654567894,
-    "issue": "Fever"
+    "patientName": "Brindha",
+    "age": 19,
+    "bloodGroup": "B+",
+    "address": "Namakkal",
+    "contact":9876556782,
+    "issue": "Psychological disorder",
+    "doctorId":5
 }
 
 ###
@@ -24,11 +25,16 @@ PUT http://localhost:8085/patient/
 Content-Type: application/json
 
 {
-    "patientId": 10,
-    "patientName": "Baasha",
-    "age": 20,
-    "bloodGroup": "O+",
-    "address": "SAlem",
-    "contact": 9876565523,
-    "issue": "Cold"
+    "patientId":3,
+    "patientName": "Gokul",
+    "age": 19,
+    "bloodGroup": "A+",
+    "address": "Rasipuram",
+    "contact":987656767,
+    "issue": "Skin",
+    "doctorId":5
 }
+
+###
+
+GET http://localhost:8085/patient/5

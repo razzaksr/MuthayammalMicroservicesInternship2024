@@ -6,7 +6,7 @@ POST http://localhost:8086/doctor/
 Content-Type: application/json
 
 {
-    "doctorName":"Kavitha G",
-    "department":"Cardialogist",
-    "experience":25,
+    "doctorName":"Madheshwaran",
+    "department":"Psychologist",
+    "experience":30
 }
